@@ -19,4 +19,8 @@ public class CalculatorService {
     public Integer multiply(Integer num1, Integer num2) {
         return num1 * num2;
     }
+
+    public Double noll (Integer num1, Integer num2) {
+        return (double) (num1 / num2);
+    }
 }

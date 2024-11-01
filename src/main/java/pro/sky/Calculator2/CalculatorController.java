@@ -59,4 +59,15 @@ public class CalculatorController {
 
         return num1 + "*" + num2 + "=" + service.multiply(num1, num2);
     }
+    @GetMapping("/noll")
+    public String noll(@RequestParam(required = false) Integer num1, @RequestParam(required = false) Integer num2) {
+        if (num1 == num1 & num2 == 0) {
+            return "На ноль делить нельзя";
+        }
+        return  num1 + "/" + num2 + "=" + service.noll(num1, num2);
+    }
+
+
+
 }
+
